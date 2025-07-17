@@ -22,6 +22,19 @@ const videosArray = [
   },
 ]
 
+const Tile = ({ _, i }: { _: any; i: number }) => {
+  return (
+    <div className='p-4 '>
+      <a href={_.link} target='_blank' rel='noopener noreferrer'>
+        <img src={_.image} className='h-40 mb-2 aspect-video object-contain ' />
+        <h1 className='text-xl text-gray-200 text-600 text-center my-3'>
+          {_.name}
+        </h1>
+        <p className='text-sm text-gray-200 text-center'>{_.dateAdded}</p>
+      </a>
+    </div>
+  )
+}
 export default function Home() {
   return (
     <div
@@ -35,30 +48,17 @@ export default function Home() {
           my art resources
         </h1>
 
-        <nav className='flex justify-center gap-10 text-xl border-b border-gray-200 pb-4 mb-8'>
+        {/* <nav className='flex justify-center gap-10 text-xl border-b border-gray-200 pb-4 mb-8'>
           <span className='hover:text-white cursor-pointer'>Videos</span>
           <span className='hover:text-white cursor-pointer'>Music</span>
           <span className='hover:text-white cursor-pointer'>Art</span>
-        </nav>
+        </nav> */}
 
         <section className='mb-12'>
-          <h2 className='text-2xl mb-4'>Youtube channels</h2>
-          <div className='grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 '>
+          <h2 className='text-2xl m-4'>Youtube channels</h2>
+          <div className='grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3'>
             {videosArray.map((_, i) => (
-              <div key={i} className='p-4 '>
-                <a href={_.link} target='_blank' rel='noopener noreferrer'>
-                  <img
-                    src={_.image}
-                    className='h-40 mb-2 aspect-video object-contain '
-                  />
-                  <h1 className='text-xl text-gray-200 text-600 text-center'>
-                    {_.name}
-                  </h1>
-                  <p className='text-sm text-gray-200 text-center'>
-                    {_.dateAdded}
-                  </p>
-                </a>
-              </div>
+              <Tile i={i} _={_} key={i} />
             ))}
           </div>
         </section>
@@ -87,8 +87,14 @@ export default function Home() {
         </div>
       </section> */}
       </main>
-      <footer className='text-center text-sm text-gray-400 py-6 bg-orange-300'>
-        ©Angeliki Patrinou, 2025
+      <footer className='text-center text-sm text-gray-200 py-6'>
+        <a
+          href='https://angeliki.web.app'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          ©Angeliki Patrinou, 2025
+        </a>
       </footer>
     </div>
   )
