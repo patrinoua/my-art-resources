@@ -1,40 +1,33 @@
-const videosArray = [
-  {
-    id: 1,
-    name: 'The Museum of Modern Art',
-    link: 'https://www.youtube.com/@themuseumofmodernart',
-    image: 'Moma.png',
-    dateAdded: '17/07/2025',
-  },
-  {
-    id: 2,
-    name: 'Tate',
-    link: 'https://www.youtube.com/@Tate',
-    image: 'tate.png',
-    dateAdded: '17/07/2025',
-  },
-  {
-    id: 2,
-    name: 'Luisiana Museum',
-    link: 'https://www.youtube.com/@LouisianaMuseum',
-    image: 'luisiana.png',
-    dateAdded: '17/07/2025',
-  },
-]
+import { videosArray } from './data/youtube'
 
-const Tile = ({ _, i }: { _: any; i: number }) => {
+export type Item = {
+  id: number
+  name: string
+  link: string
+  image: string
+  dateAdded: string
+}
+
+type TileProps = {
+  item: Item
+}
+const Tile = ({ item }: TileProps) => {
   return (
     <div className='p-4 '>
-      <a href={_.link} target='_blank' rel='noopener noreferrer'>
-        <img src={_.image} className='h-40 mb-2 aspect-video object-contain ' />
+      <a href={item.link} target='_blank' rel='noopener noreferrer'>
+        <img
+          src={item.image}
+          className='h-40 mb-2 aspect-video object-contain '
+        />
         <h1 className='text-xl text-gray-200 text-600 text-center my-3'>
-          {_.name}
+          {item.name}
         </h1>
-        <p className='text-sm text-gray-200 text-center'>{_.dateAdded}</p>
+        <p className='text-sm text-gray-200 text-center'>{item.dateAdded}</p>
       </a>
     </div>
   )
 }
+
 export default function Home() {
   return (
     <div
@@ -57,8 +50,8 @@ export default function Home() {
         <section className='mb-12'>
           <h2 className='text-2xl m-4'>Youtube channels</h2>
           <div className='grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3'>
-            {videosArray.map((_, i) => (
-              <Tile i={i} _={_} key={i} />
+            {videosArray.map((item, i) => (
+              <Tile item={item} key={i} />
             ))}
           </div>
         </section>
