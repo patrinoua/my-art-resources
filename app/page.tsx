@@ -48,7 +48,7 @@ export default function Home() {
 
 const Tile = ({ item }: TileProps) => {
   return (
-    <div className='flex p-4 transition-transform duration-300 hover:scale-105  brightness-80 hover:brightness-100 '>
+    <div className='flex p-4 transition-transform duration-300 hover:scale-105  brightness-80 hover:brightness-100 justify-center'>
       <a href={item.link} target='_blank' rel='noopener noreferrer'>
         <img
           src={item.image}
