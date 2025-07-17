@@ -14,7 +14,7 @@ export default function Home() {
       }}
     >
       <div className='w-full bg-black p-8'>
-        <h1 className='sm:text-6xl md:text-8xl font-extralight text-center my-6'>
+        <h1 className='text-3xl md:text-8xl font-extralight text-center my-6'>
           s • o • u • r • c • e • r • y
         </h1>
       </div>
@@ -71,7 +71,7 @@ type SectionProps = {
 const Section = ({ item }: SectionProps) => {
   return (
     <section className='mb-10' key={item.name}>
-      <h2 className='text-5xl mt-8 mb-6 text-yellow-200 text-center tracking-wide brightness-70'>
+      <h2 className='text-3xl md:text-6xl mt-8 mb-6 text-yellow-200 text-center tracking-wide brightness-70'>
         {item.name}
       </h2>
       <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3'>
