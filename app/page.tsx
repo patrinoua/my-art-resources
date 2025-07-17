@@ -62,7 +62,7 @@ const Tile = ({ item }: TileProps) => {
 
 type Section = {
   name: string
-  array: any
+  array: Item[]
 }
 type SectionProps = {
   item: Section
