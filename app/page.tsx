@@ -1,4 +1,10 @@
-import { youtubeChannelArray, musicArray, TileProps, Item } from './data/data'
+import {
+  youtubeChannelArray,
+  musicArray,
+  artistsArray,
+  TileProps,
+  Item,
+} from './data/data'
 import { Montserrat } from 'next/font/google'
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -32,7 +38,7 @@ export default function Home() {
         {sectionsArray.map((section, i) => {
           return (
             <div key={i}>
-              <Section item={section} />
+              <Section section={section} />
               {i !== sectionsArray.length - 1 && (
                 <div className='w-full h-1 bg-yellow-200 my-8 opacity-20' />
               )}
@@ -61,40 +67,47 @@ export default function Home() {
   )
 }
 
-const Tile = ({ item }: TileProps) => {
-  return (
-    <div className='flex p-4 transition-transform duration-300 hover:scale-105  brightness-80 hover:brightness-100 justify-center'>
-      <a href={item.link} target='_blank' rel='noopener noreferrer'>
-        <img
-          src={item.image}
-          className='h-40 mb-2 aspect-video object-contain '
-        />
-        <h1 className='text-xl text-gray-200 text-center my-3'>{item.name}</h1>
-      </a>
-    </div>
-  )
-}
-
 type Section = {
   name: string
   array: Item[]
 }
 type SectionProps = {
-  item: Section
+  section: Section
 }
 
-const Section = ({ item }: SectionProps) => {
+const Section = ({ section }: SectionProps) => {
   return (
-    <section className='mb-10' key={item.name}>
+    <section className='mb-10' key={section.name}>
       <h2 className='text-3xl md:text-6xl mt-8 mb-6 text-amber-300 text-center tracking-wide brightness-80'>
-        {item.name}
+        {section.name}
       </h2>
       <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3'>
-        {item.array.map((item: Item, i: number) => (
+        {section.array.map((item: Item, i: number) => (
           <Tile item={item} key={i} />
         ))}
       </div>
     </section>
+  )
+}
+
+const Tile = ({ item }: TileProps) => {
+  return (
+    <a href={item.link} target='_blank' rel='noopener noreferrer'>
+      <div
+        className='
+          flex flex-col p-4 
+          items-center
+          transition-transform duration-300 
+          hover:scale-115 brightness-80 hover:brightness-100 
+          center'
+      >
+        <img
+          src={(item.image.length && item.image) || 'art_default.png'}
+          className='h-40 w-40 mb-2 object-cover rounded-full bg-[#150b0b]/30 brightness-80 shadow-lg'
+        />
+        <h1 className='text-xl text-gray-200 text-center my-3'>{item.name}</h1>
+      </div>
+    </a>
   )
 }
 
@@ -108,4 +121,8 @@ const musicSection = {
   array: musicArray,
 }
 
-const sectionsArray = [youtubeChannelsSection, musicSection]
+const artistsSection = {
+  name: 'Artists',
+  array: artistsArray,
+}
+const sectionsArray = [youtubeChannelsSection, musicSection, artistsSection]
