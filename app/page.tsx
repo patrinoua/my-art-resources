@@ -23,7 +23,7 @@ export default function Home() {
       <div className='w-full bg-black p-8'>
         {/* <img src='colorimage.png' className='w-full'/> */}
         <h1
-          className='text-3xl md:text-8xl font-extralight text-center my-6
+          className='text-3xl md:text-7xl font-extralight text-center my-6
             text-transparent bg-clip-text 
             bg-[url("/colorimage.png")]
             bg-cover 
@@ -33,21 +33,23 @@ export default function Home() {
           s • o • u • r • c • e • r • y
         </h1>
       </div>
-
       <main className='flex flex-grow flex-col  font-sans p-8'>
         {sectionsArray.map((section, i) => {
           return (
             <div key={i}>
               <Section section={section} />
               {i !== sectionsArray.length - 1 && (
-                <div className='w-full h-1 bg-yellow-200 my-8 opacity-20' />
+                <div className='w-full h-1 bg-yellow-900 my-8 opacity-80 shadow-lg' />
               )}
             </div>
           )
         })}
       </main>
       {/* <div className='w-full bg-black p-8'> */}
-
+      <div className='flex flex-col items-center p-4 text-gray-500 '>
+        * Things that are not included (but hey, change my mind!) are{' '}
+        <b>arte, nts</b>
+      </div>
       <footer
         className='text-center text-sm text-gray-200 py-6 bg-black p-8
             bg-[url("/colorimage.png")]
@@ -80,7 +82,7 @@ const Section = ({ section }: SectionProps) => {
     <section className='mb-10 flex flex-col items-center' key={section.name}>
       <h2
         style={{ textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}
-        className='text-3xl md:text-6xl mt-8 mb-8 text-amber-300 text-center tracking-wide brightness-80'
+        className='text-3xl md:text-5xl mt-8 mb-8 text-amber-400 text-center tracking-wide brightness-70'
       >
         {section.name}
       </h2>
@@ -106,7 +108,7 @@ const Tile = ({ item }: TileProps) => {
       >
         <img
           src={(item.image.length && item.image) || 'art_default.png'}
-          className='h-45 w-45 object-cover rounded-full bg-[#150b0b]/30 brightness-80 shadow-lg'
+          className='h-45 w-45 object-cover rounded-full bg-[#150b0b]/30 brightness-80 shadow-lg m-2 p-2'
         />
         <h1 className='text-xl text-gray-200 text-center my-3 max-w-[200px] '>
           {item.name}
