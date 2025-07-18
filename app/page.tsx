@@ -5,6 +5,7 @@ const montserrat = Montserrat({
   weight: ['400', '500'], // πρόσθεσε και '600', '700' αν χρειάζεσαι bold
   variable: '--font-montserrat',
 })
+
 export default function Home() {
   return (
     <div
@@ -14,7 +15,15 @@ export default function Home() {
       }}
     >
       <div className='w-full bg-black p-8'>
-        <h1 className='text-3xl md:text-8xl font-extralight text-center my-6'>
+        {/* <img src='colorimage.png' className='w-full'/> */}
+        <h1
+          className='text-3xl md:text-8xl font-extralight text-center my-6
+            text-transparent bg-clip-text 
+            bg-[url("/colorimage.png")]
+            bg-cover 
+            bg-[0%_50%]
+            '
+        >
           s • o • u • r • c • e • r • y
         </h1>
       </div>
@@ -33,7 +42,13 @@ export default function Home() {
       </main>
       {/* <div className='w-full bg-black p-8'> */}
 
-      <footer className='text-center text-sm text-gray-200 py-6 bg-black p-8'>
+      <footer
+        className='text-center text-sm text-gray-200 py-6 bg-black p-8
+            bg-[url("/colorimage.png")]
+            bg-cover 
+            bg-[0%_67%]
+      '
+      >
         <a
           href='https://angeliki.web.app'
           target='_blank'
@@ -71,7 +86,7 @@ type SectionProps = {
 const Section = ({ item }: SectionProps) => {
   return (
     <section className='mb-10' key={item.name}>
-      <h2 className='text-3xl md:text-6xl mt-8 mb-6 text-yellow-200 text-center tracking-wide brightness-70'>
+      <h2 className='text-3xl md:text-6xl mt-8 mb-6 text-amber-300 text-center tracking-wide brightness-80'>
         {item.name}
       </h2>
       <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3'>
