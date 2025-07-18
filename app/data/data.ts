@@ -13,7 +13,7 @@ export const youtubeChannelArray: Item[] = [
     //maybe add city
     name: 'The Museum of Modern Art',
     link: 'https://www.youtube.com/@themuseumofmodernart',
-    image: 'momapic.png',
+    image: 'moma1.png',
     dateAdded: '17/07/2025',
   },
   {
@@ -32,24 +32,6 @@ export const youtubeChannelArray: Item[] = [
 
 export const musicArray: Item[] = [
   {
-    name: 'lastfm',
-    link: 'https://www.last.fm/user/MrsBlackGr',
-    image: 'lastfm-me.png',
-    dateAdded: '17/07/2025',
-  },
-  {
-    name: 'goo mixcloud',
-    link: 'https://www.mixcloud.com/george-goo/',
-    image: 'goo.png',
-    dateAdded: '17/07/2025',
-  },
-  {
-    name: 'Electron Soundcloud',
-    link: 'https://soundcloud.com/elektron-cafe',
-    image: 'ilektron1.png',
-    dateAdded: '17/07/2025',
-  },
-  {
     name: 'Pikap Soundcloud',
     link: 'https://soundcloud.com/to-pikap-radio',
     image: 'pikap1.png',
@@ -62,16 +44,46 @@ export const musicArray: Item[] = [
     dateAdded: '17/07/2025',
   },
   {
+    name: 'Electron Soundcloud',
+    link: 'https://soundcloud.com/elektron-cafe',
+    image: 'ilektron1.png',
+    dateAdded: '17/07/2025',
+  },
+  {
     name: 'pikap mixcloud',
     link: 'https://www.mixcloud.com/topikap/',
     image: 'topikap.png',
     dateAdded: '17/07/2025',
   },
   {
-    name: 'classics by sofia',
+    name: 'paranoise radio',
+    link: 'https://www.paranoiseradio.com/',
+    image: 'paranoise.png',
+    dateAdded: '17/07/2025',
+  },
+  {
+    name: 'paranoise mixcloud',
+    link: 'https://www.mixcloud.com/ParanoiseRadio/',
+    image: 'paranoise1.png',
+    dateAdded: '17/07/2025',
+  },
+  {
+    name: 'Classics by Sofia',
     link: 'https://open.spotify.com/playlist/7iPLWA8euz3QaZjkFSUsUm?si=Wca-jOqIQuWRKnVFzwVCyg&pi=Zc0pkVFUSLG0O&nd=1&dlsi=f3224d75fadf4452',
     image: '',
     dateAdded: '18/07/2025',
+  },
+  {
+    name: 'goo mixcloud',
+    link: 'https://www.mixcloud.com/george-goo/',
+    image: 'goo.png',
+    dateAdded: '17/07/2025',
+  },
+  {
+    name: 'lastfm',
+    link: 'https://www.last.fm/user/MrsBlackGr',
+    image: 'lastfm-me.png',
+    dateAdded: '17/07/2025',
   },
   {
     name: 'Holy Tongue',

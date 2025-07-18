@@ -77,11 +77,14 @@ type SectionProps = {
 
 const Section = ({ section }: SectionProps) => {
   return (
-    <section className='mb-10' key={section.name}>
-      <h2 className='text-3xl md:text-6xl mt-8 mb-6 text-amber-300 text-center tracking-wide brightness-80'>
+    <section className='mb-10 flex flex-col items-center' key={section.name}>
+      <h2
+        style={{ textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}
+        className='text-3xl md:text-6xl mt-8 mb-8 text-amber-300 text-center tracking-wide brightness-80'
+      >
         {section.name}
       </h2>
-      <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3'>
+      <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 '>
         {section.array.map((item: Item, i: number) => (
           <Tile item={item} key={i} />
         ))}
@@ -103,9 +106,11 @@ const Tile = ({ item }: TileProps) => {
       >
         <img
           src={(item.image.length && item.image) || 'art_default.png'}
-          className='h-40 w-40 mb-2 object-cover rounded-full bg-[#150b0b]/30 brightness-80 shadow-lg'
+          className='h-45 w-45 object-cover rounded-full bg-[#150b0b]/30 brightness-80 shadow-lg'
         />
-        <h1 className='text-xl text-gray-200 text-center my-3'>{item.name}</h1>
+        <h1 className='text-xl text-gray-200 text-center my-3 max-w-[200px] '>
+          {item.name}
+        </h1>
       </div>
     </a>
   )
