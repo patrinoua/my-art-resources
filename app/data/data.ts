@@ -74,15 +74,15 @@ export const musicArray: Item[] = [
     dateAdded: '18/07/2025',
   },
   {
-    name: 'goo mixcloud',
-    link: 'https://www.mixcloud.com/george-goo/',
-    image: 'goo.png',
-    dateAdded: '17/07/2025',
-  },
-  {
     name: 'lastfm',
     link: 'https://www.last.fm/user/MrsBlackGr',
     image: 'lastfm-me.png',
+    dateAdded: '17/07/2025',
+  },
+  {
+    name: 'goo mixcloud',
+    link: 'https://www.mixcloud.com/george-goo/',
+    image: 'goo.png',
     dateAdded: '17/07/2025',
   },
   {
