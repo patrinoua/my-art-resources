@@ -1,9 +1,13 @@
 import {
+  TileProps,
+  Item,
   youtubeChannelArray,
   musicArray,
   artistsArray,
-  TileProps,
-  Item,
+  barsArray,
+  djsArray,
+  ekpompesArray,
+  followingArray,
 } from './data/data'
 import { Montserrat } from 'next/font/google'
 const montserrat = Montserrat({
@@ -17,7 +21,8 @@ export default function Home() {
     <div
       className={` ${montserrat.variable} min-h-screen flex flex-col text-gray-200`}
       style={{
-        background: 'linear-gradient(to top, #181322ff, #63104eff)',
+        background:
+          'linear-gradient(to bottom, #150731ff, #63104eff, #011c34ff)',
       }}
     >
       <div className='w-full bg-black p-8'>
@@ -132,4 +137,29 @@ const artistsSection = {
   name: 'Artists',
   array: artistsArray,
 }
-const sectionsArray = [youtubeChannelsSection, musicSection, artistsSection]
+const barsSection = {
+  name: 'Where?',
+  array: barsArray,
+}
+const djsSection = {
+  name: 'Who?',
+  array: djsArray,
+}
+const ekpompesSection = {
+  name: 'Shows',
+  array: ekpompesArray,
+}
+const followingSection = {
+  name: 'Δείξε μου το φίλο σου',
+  array: followingArray,
+}
+
+const sectionsArray = [
+  musicSection,
+  barsSection,
+  djsSection,
+  ekpompesSection,
+  artistsSection,
+  followingSection,
+  youtubeChannelsSection,
+]
