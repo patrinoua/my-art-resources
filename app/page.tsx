@@ -62,13 +62,29 @@ export default function Home() {
             bg-[0%_67%]
       '
       >
-        <a
+        <div className='flex justify-center'>
+          <a
+            href='https://www.instagram.com/demeque_saloniquia/'
+            target='_blank'
+            className='no-underline'
+          >
+            <img src='instagram.png' className='w-7 m-2 mb-5' />
+          </a>
+          <a
+            href='https://github.com/patrinoua/my-art-resources'
+            target='_blank'
+            className='no-underline'
+          >
+            <img src='github.png' className='w-7 m-2 mb-5' />
+          </a>
+        </div>
+        {/* <a
           href='https://angeliki.web.app'
           target='_blank'
           rel='noopener noreferrer'
         >
           © Angeliki Patrinou, 2025
-        </a>
+        </a> */}
       </footer>
     </div>
   )
