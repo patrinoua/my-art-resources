@@ -4,6 +4,7 @@ import {
   youtubeChannelArray,
   musicArray,
   // artistsArray,
+  therinaArray,
   barsArray,
   djsArray,
   ekpompesArray,
@@ -169,6 +170,10 @@ const followingSection = {
   name: 'Δείξε μου το φίλο σου',
   array: followingArray,
 }
+const therinaSection = {
+  name: 'θερινά σινεμά',
+  array: therinaArray,
+}
 
 const sectionsArray = [
   musicSection,
@@ -178,4 +183,5 @@ const sectionsArray = [
   // artistsSection,
   followingSection,
   youtubeChannelsSection,
+  therinaSection,
 ]

@@ -271,3 +271,25 @@ export const followingArray: Item[] = [
     dateAdded: '17/07/2025',
   },
 ]
+export const therinaArray: Item[] = [
+  {
+    name: 'cine apollon',
+    link: 'https://www.instagram.com/cine_apollon/',
+    image: 'cine-apollon.png',
+    dateAdded: '20/07/2025',
+  },
+
+  {
+    name: 'cine alex',
+    link: 'https://www.instagram.com/cinema_alex/',
+    image: 'cine-alex.png',
+    dateAdded: '20/07/2025',
+  },
+
+  {
+    name: 'cine natali',
+    link: 'https://www.instagram.com/natalicinema',
+    image: 'cine-natali.png',
+    dateAdded: '20/07/2025',
+  },
+]
