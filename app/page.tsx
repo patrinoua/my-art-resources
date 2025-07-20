@@ -107,7 +107,7 @@ const Section = ({ section }: SectionProps) => {
       >
         {section.name}
       </h2>
-      <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 '>
+      <div className='grid grid-cols-1 gap-4 grid-cols-2 md:grid-cols-3 '>
         {section.array.map((item: Item, i: number) => (
           <Tile item={item} key={i} />
         ))}
@@ -129,7 +129,7 @@ const Tile = ({ item }: TileProps) => {
       >
         <img
           src={(item.image.length && item.image) || 'art_default.png'}
-          className='h-45 w-45 object-cover rounded-full bg-[#150b0b]/30 brightness-80 shadow-lg m-2 p-2'
+          className='md:h-45 md:w-45 h-25 w-25 object-cover rounded-full bg-[#150b0b]/30 brightness-80 shadow-lg p-1 md:m-2 md:p-2'
         />
         <h1 className='text-xl text-gray-200 text-center my-3 max-w-[200px] '>
           {item.name}
@@ -175,7 +175,7 @@ const sectionsArray = [
   barsSection,
   djsSection,
   ekpompesSection,
-  artistsSection,
+  // artistsSection,
   followingSection,
   youtubeChannelsSection,
 ]
