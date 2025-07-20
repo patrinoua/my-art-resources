@@ -70,7 +70,7 @@ export const musicArray: Item[] = [
   {
     name: 'Classics by Sofia',
     link: 'https://open.spotify.com/playlist/7iPLWA8euz3QaZjkFSUsUm?si=Wca-jOqIQuWRKnVFzwVCyg&pi=Zc0pkVFUSLG0O&nd=1&dlsi=f3224d75fadf4452',
-    image: '',
+    image: 'classic.png',
     dateAdded: '18/07/2025',
   },
   {
@@ -84,6 +84,13 @@ export const musicArray: Item[] = [
     link: 'https://www.mixcloud.com/george-goo/',
     image: 'goo.png',
     dateAdded: '17/07/2025',
+  },
+
+  {
+    name: 'Kirchoff mixcloud',
+    link: 'https://www.mixcloud.com/37_5967%CE%9D_Kirchoff26_1123%CE%95/?fbclid=IwY2xjawLp6oVleHRuA2FlbQIxMABicmlkETBNUFdrQkV4VWFzeFR3MjFkAR68HL75UYJXYRTAgh16HXXR9RJe9D8SdFbFpcpc7EAmYneGSPPca9VL3qOdpQ_aem_OqTZ0SCZE77xaTkFClmqZQ',
+    image: 'kirchoff1.png',
+    dateAdded: '19/07/2025',
   },
   {
     name: 'Holy Tongue',
@@ -130,7 +137,7 @@ export const barsArray: Item[] = [
   {
     name: 'μήκους',
     link: 'https://www.instagram.com/mikroumikous.bar',
-    image: '',
+    image: 'mikous.png',
     dateAdded: '19/07/2025',
   },
   {
@@ -163,6 +170,18 @@ export const barsArray: Item[] = [
     image: 'resi.png',
     dateAdded: '19/07/2025',
   },
+  {
+    name: 'hemingway',
+    link: 'https://www.instagram.com/hemingway_skg/',
+    image: 'hemingway.png',
+    dateAdded: '19/07/2025',
+  },
+  {
+    name: 'urban',
+    link: 'https://www.instagram.com/urbanbarskg/',
+    image: 'urban.png',
+    dateAdded: '19/07/2025',
+  },
 ]
 export const djsArray: Item[] = [
   {
@@ -185,17 +204,22 @@ export const djsArray: Item[] = [
     image: 'goo.png',
     dateAdded: '19/07/2025',
   },
-
   {
     name: 'Kirchoff',
-    link: 'https://www.instagram.com/vwettex/',
-    image: '',
+    link: 'https://web.facebook.com/profile.php?id=1080617384',
+    image: 'kirchoff.png',
     dateAdded: '19/07/2025',
   },
   {
     name: 'Kate de Sons',
     link: 'https://www.instagram.com/katedesons/',
     image: 'katedesons.png',
+    dateAdded: '19/07/2025',
+  },
+  {
+    name: 'Mammoth',
+    link: 'https://web.facebook.com/nikos.kleisiaris.1',
+    image: 'mammoth.png',
     dateAdded: '19/07/2025',
   },
 ]
