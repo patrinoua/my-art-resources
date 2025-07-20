@@ -3,7 +3,7 @@ import {
   Item,
   youtubeChannelArray,
   musicArray,
-  artistsArray,
+  // artistsArray,
   barsArray,
   djsArray,
   ekpompesArray,
@@ -149,10 +149,10 @@ const musicSection = {
   array: musicArray,
 }
 
-const artistsSection = {
-  name: 'Artists',
-  array: artistsArray,
-}
+// const artistsSection = {
+//   name: 'Artists',
+//   array: artistsArray,
+// }
 const barsSection = {
   name: 'Where?',
   array: barsArray,
