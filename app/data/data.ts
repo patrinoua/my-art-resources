@@ -130,7 +130,7 @@ export const barsArray: Item[] = [
   },
   {
     name: 'electron',
-    link: 'https://www.instagram.com/electron.cafe',
+    link: 'https://www.instagram.com/elektron.cafe',
     image: 'ilektron1.png',
     dateAdded: '19/07/2025',
   },
@@ -171,9 +171,39 @@ export const barsArray: Item[] = [
     dateAdded: '19/07/2025',
   },
   {
+    name: 'arcade',
+    link: 'https://www.instagram.com/arcade_skg/',
+    image: 'arcade.png',
+    dateAdded: '21/07/2025',
+  },
+  {
+    name: 'giapi',
+    link: 'https://www.instagram.com/giapi_bar /',
+    image: 'giapi.png',
+    dateAdded: '21/07/2025',
+  },
+  {
     name: 'hemingway',
     link: 'https://www.instagram.com/hemingway_skg/',
     image: 'hemingway.png',
+    dateAdded: '19/07/2025',
+  },
+  {
+    name: 'elephantas',
+    link: 'https://www.instagram.com/cafe_bar_elephantas/',
+    image: 'elephantas.png',
+    dateAdded: '19/07/2025',
+  },
+  {
+    name: 'film cafe bar',
+    link: 'https://www.instagram.com/film_cafe_bar/',
+    image: 'film.png',
+    dateAdded: '19/07/2025',
+  },
+  {
+    name: 'mr jones',
+    link: 'https://www.instagram.com/mr.jones_thessaloniki/',
+    image: 'mrjones.png',
     dateAdded: '19/07/2025',
   },
   {
@@ -181,6 +211,60 @@ export const barsArray: Item[] = [
     link: 'https://www.instagram.com/urbanbarskg/',
     image: 'urban.png',
     dateAdded: '19/07/2025',
+  },
+  {
+    name: 'elxate',
+    link: 'https://www.instagram.com/elxate_unofficial/',
+    image: 'elxate.png',
+    dateAdded: '21/07/2025',
+  },
+  {
+    name: 'palermo',
+    link: 'https://www.instagram.com/cafepalermo_/',
+    image: 'palermo.png',
+    dateAdded: '21/07/2025',
+  },
+  {
+    name: 'stereo',
+    link: 'https://www.instagram.com/stereo_oo_/',
+    image: 'stereo.png',
+    dateAdded: '21/07/2025',
+  },
+  {
+    name: 'ypsilon',
+    link: 'https://www.instagram.com/ypsilon___/',
+    image: 'ypsilon.png',
+    dateAdded: '21/07/2025',
+  },
+  {
+    name: 'tzela delta',
+    link: 'https://www.instagram.com/tzeladeltaskg_/',
+    image: 'tzeladelta.png',
+    dateAdded: '21/07/2025',
+  },
+  {
+    name: 'ydro',
+    link: 'https://www.instagram.com/ydro___/',
+    image: 'ydro.png',
+    dateAdded: '21/07/2025',
+  },
+  {
+    name: 'speakeasy',
+    link: 'https://www.instagram.com/speakeasy_floor/',
+    image: 'speakeasy.png',
+    dateAdded: '21/07/2025',
+  },
+  {
+    name: 'highonsugar',
+    link: 'https://www.instagram.com/highonsugar______/',
+    image: 'highonsugar.png',
+    dateAdded: '21/07/2025',
+  },
+  {
+    name: 'host',
+    link: 'https://www.instagram.com/the_host_clubskg/',
+    image: 'host.png',
+    dateAdded: '21/07/2025',
   },
 ]
 export const djsArray: Item[] = [
@@ -278,7 +362,6 @@ export const therinaArray: Item[] = [
     image: 'cine-apollon.png',
     dateAdded: '20/07/2025',
   },
-
   {
     name: 'cine alex',
     link: 'https://www.instagram.com/cinema_alex/',
