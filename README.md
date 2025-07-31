@@ -1,4 +1,4 @@
-# my art resources :)
+# my art resources
 
 https://my-art-resources.vercel.app/
 
