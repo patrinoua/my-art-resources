@@ -12,6 +12,7 @@ import {
   hobbiesArray,
 } from './data/data'
 import { Montserrat } from 'next/font/google'
+
 const montserrat = Montserrat({
   subsets: ['latin'],
   weight: ['400', '500'], // πρόσθεσε και '600', '700' αν χρειάζεσαι bold
@@ -21,61 +22,50 @@ const montserrat = Montserrat({
 export default function Home() {
   return (
     <div
-      className={` ${montserrat.variable} min-h-screen flex flex-col text-gray-200`}
+      className={`${montserrat.variable} flex min-h-screen flex-col text-gray-200`}
       style={{
         background:
           'linear-gradient(to bottom, #150731ff, #63104eff, #050831ff, #011c34ff)',
       }}
     >
-      <div className='w-full bg-black p-8'>
+      <div className="w-full bg-black p-8">
         {/* <img src='colorimage.png' className='w-full'/> */}
-        <h1
-          className=' my-6
-            text-3xl md:text-7xl font-extralight text-center text-transparent 
-            bg-clip-text bg-[url("/colorimage.png")] bg-cover bg-[0%_50%]
-            '
-        >
+        <h1 className='my-6 bg-[url("/colorimage.png")] bg-cover bg-clip-text bg-[0%_50%] text-center text-3xl font-extralight text-transparent md:text-7xl'>
           s • o • u • r • c • e • r • y
         </h1>
       </div>
-      <main className='flex flex-grow flex-col font-sans p-8'>
+      <main className="flex flex-grow flex-col p-8 font-sans">
         {sectionsArray.map((section, i) => {
           return (
             <div key={i}>
               <Section section={section} />
               {i !== sectionsArray.length - 1 && (
-                <div className='w-full h-1 bg-yellow-900 my-8 opacity-80 shadow-lg' />
+                <div className="my-8 h-1 w-full bg-yellow-900 opacity-80 shadow-lg" />
               )}
             </div>
           )
         })}
         {/* <div className='w-full bg-black p-8'> */}
-        <div className='flex flex-col items-center p-4 text-gray-500 '>
+        <div className="flex flex-col items-center p-4 text-gray-500">
           * Things that are not included (but hey, change my mind!) are{' '}
           <b>arte, nts</b>
         </div>
       </main>
-      <footer
-        className='
-          text-center text-sm text-gray-200
-          py-6 bg-black p-8
-          bg-[url("/colorimage.png")] bg-cover bg-[0%_67%]
-      '
-      >
-        <div className='flex justify-center'>
+      <footer className='bg-black bg-[url("/colorimage.png")] bg-cover bg-[0%_67%] p-8 py-6 text-center text-sm text-gray-200'>
+        <div className="flex justify-center">
           <a
-            href='https://www.instagram.com/demeque_saloniquia/'
-            target='_blank'
-            className='no-underline'
+            href="https://www.instagram.com/demeque_saloniquia/"
+            target="_blank"
+            className="no-underline"
           >
-            <img src='instagram.png' className='w-7 m-2 mb-5' />
+            <img src="instagram.png" className="m-2 mb-5 w-7" />
           </a>
           <a
-            href='https://github.com/patrinoua/my-art-resources'
-            target='_blank'
-            className='no-underline'
+            href="https://github.com/patrinoua/my-art-resources"
+            target="_blank"
+            className="no-underline"
           >
-            <img src='github.png' className='w-7 m-2 mb-5' />
+            <img src="github.png" className="m-2 mb-5 w-7" />
           </a>
         </div>
         {/* <a
@@ -100,14 +90,16 @@ type SectionProps = {
 
 const Section = ({ section }: SectionProps) => {
   return (
-    <section className='mb-10 flex flex-col items-center' key={section.name}>
+    <section className="mb-10 flex flex-col items-center" key={section.name}>
       <h2
-        style={{ textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}
-        className='text-3xl md:text-5xl mt-8 mb-8 text-amber-400 text-center tracking-wide brightness-75 font-bold'
+        style={{
+          textShadow: '0 2px 4px rgba(0,0,0,0.3)',
+        }}
+        className="mt-8 mb-8 text-center text-3xl font-medium tracking-wide text-amber-400 brightness-75 md:text-5xl"
       >
         {section.name}
       </h2>
-      <div className='grid grid-cols-1 gap-1 grid-cols-2 md:grid-cols-3 '>
+      <div className="grid grid-cols-1 grid-cols-2 gap-1 md:grid-cols-3">
         {section.array.map((item: Item, i: number) => (
           <Tile item={item} key={i} />
         ))}
@@ -118,25 +110,17 @@ const Section = ({ section }: SectionProps) => {
 
 const Tile = ({ item }: TileProps) => {
   return (
-    <a href={item.link} target='_blank' rel='noopener noreferrer'>
-      <div
-        className='
-          flex flex-col 
-          items-center
-          transition-transform duration-300 
-          hover:scale-110 
-          brightness-70 hover:brightness-90 
-          center'
-      >
+    <a href={item.link} target="_blank" rel="noopener noreferrer">
+      <div className="center flex flex-col items-center brightness-70 transition-transform duration-300 hover:scale-110 hover:brightness-90">
         <img
           src={(item.image.length && item.image) || 'art_default.png'}
-          className='md:h-60 md:w-60 h-25 w-25 object-cover bg-[#150b0b]/30 brightness-80 shadow-lg p-1 md:m-1 md:p-1'
+          className="h-25 w-25 bg-[#150b0b]/30 object-cover p-1 shadow-lg brightness-80 md:m-1 md:h-60 md:w-60 md:p-1"
         />
-        <h1 className='text-xl text-gray-200 text-center mb-4 max-w-[200px] '>
+        <h1 className="mb-4 max-w-[200px] text-center text-xl text-gray-200">
           {item.name}
         </h1>
         {item.comment && (
-          <p className='text-gray-200 text-center max-w-[200px] '>
+          <p className="max-w-[200px] text-center text-gray-200">
             {item.comment}
           </p>
         )}
