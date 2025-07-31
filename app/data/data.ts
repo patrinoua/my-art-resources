@@ -51,19 +51,19 @@ export const musicArray: Item[] = [
     dateAdded: '17/07/2025',
   },
   {
-    name: 'pikap mixcloud',
+    name: 'Pikap mixcloud',
     link: 'https://www.mixcloud.com/topikap/',
     image: 'topikap.png',
     dateAdded: '17/07/2025',
   },
   {
-    name: 'paranoise radio',
+    name: 'Paranoise radio',
     link: 'https://www.paranoiseradio.com/',
     image: 'paranoise.png',
     dateAdded: '17/07/2025',
   },
   {
-    name: 'paranoise mixcloud',
+    name: 'Paranoise mixcloud',
     link: 'https://www.mixcloud.com/ParanoiseRadio/',
     image: 'paranoise1.png',
     dateAdded: '17/07/2025',
@@ -81,7 +81,7 @@ export const musicArray: Item[] = [
     dateAdded: '17/07/2025',
   },
   {
-    name: 'goo mixcloud',
+    name: 'Goo mixcloud',
     link: 'https://www.mixcloud.com/george-goo/',
     image: 'goo.png',
     dateAdded: '17/07/2025',
@@ -100,170 +100,161 @@ export const musicArray: Item[] = [
     dateAdded: '18/07/2025',
   },
   {
-    name: 'panfar mixcloud',
+    name: 'Panfar mixcloud',
     link: 'https://www.mixcloud.com/pan-far/reposts/',
     image: 'panfar.png',
     dateAdded: '19/07/2025',
   },
   {
-    name: 'duru mixcloud',
+    name: 'Duru mixcloud',
     link: 'https://www.mixcloud.com/DuruDuru/reposts/',
     image: 'duru.png',
     dateAdded: '19/07/2025',
   },
 ]
 
-export const artistsArray: Item[] = [
-  {
-    name: 'Pedro Maia',
-    link: 'https://www.instagram.com/maiapedro/',
-    image: 'maia.png',
-    dateAdded: '17/07/2025',
-  },
-]
-
 export const barsArray: Item[] = [
   {
-    name: 'pikap',
+    name: 'Pikap',
     link: 'https://www.instagram.com/topikap',
     image: 'topikap.png',
     dateAdded: '19/07/2025',
   },
   {
-    name: 'electron',
+    name: 'Electron',
     link: 'https://www.instagram.com/elektron.cafe',
     image: 'ilektron1.png',
     dateAdded: '19/07/2025',
   },
   {
-    name: 'μήκους',
+    name: 'Μήκους',
     link: 'https://www.instagram.com/mikroumikous.bar',
     image: 'mikous.png',
     dateAdded: '19/07/2025',
   },
   {
-    name: 'προσεχώς',
+    name: 'Προσεχώς',
     link: 'https://www.instagram.com/prosexws',
     image: '',
     dateAdded: '19/07/2025',
     comment: 'akrivoutsiko!',
   },
   {
-    name: 'pierrot',
+    name: 'Pierrot',
     link: 'https://www.instagram.com/_pierrot_le_fou_pub_alehaus/',
     image: 'pierrot.png',
     dateAdded: '19/07/2025',
   },
   {
-    name: 'oratos',
+    name: 'Oratos',
     link: 'https://www.instagram.com/_oratos__/',
     image: 'oratos.png',
     dateAdded: '19/07/2025',
   },
   {
-    name: 'yfanet',
+    name: 'Yfanet',
     link: 'https://www.instagram.com/fabrika.yfanet/',
     image: 'yfanet.png',
     dateAdded: '19/07/2025',
   },
   {
-    name: 'resi',
+    name: 'Resi',
     link: 'https://www.instagram.com/theresidentsbar/',
     image: 'resi.png',
     dateAdded: '19/07/2025',
   },
   {
-    name: 'arcade',
+    name: 'Arcade',
     link: 'https://www.instagram.com/arcade_skg/',
     image: 'arcade.png',
     dateAdded: '21/07/2025',
   },
   {
-    name: 'giapi',
+    name: 'Giapi',
     link: 'https://www.instagram.com/giapi_bar /',
     image: 'giapi.png',
     dateAdded: '21/07/2025',
   },
   {
-    name: 'hemingway',
+    name: 'Hemingway',
     link: 'https://www.instagram.com/hemingway_skg/',
     image: 'hemingway.png',
     dateAdded: '19/07/2025',
   },
   {
-    name: 'elephantas',
+    name: 'Elephantas',
     link: 'https://www.instagram.com/cafe_bar_elephantas/',
     image: 'elephantas.png',
     dateAdded: '19/07/2025',
   },
   {
-    name: 'film cafe bar',
+    name: 'Film',
     link: 'https://www.instagram.com/film_cafe_bar/',
     image: 'film.png',
     dateAdded: '19/07/2025',
   },
   {
-    name: 'mr jones',
+    name: 'Mr Jones',
     link: 'https://www.instagram.com/mr.jones_thessaloniki/',
     image: 'mrjones.png',
     dateAdded: '19/07/2025',
   },
   {
-    name: 'urban',
+    name: 'Urban',
     link: 'https://www.instagram.com/urbanbarskg/',
     image: 'urban.png',
     dateAdded: '19/07/2025',
   },
   {
-    name: 'elxate',
+    name: 'Elxate',
     link: 'https://www.instagram.com/elxate_unofficial/',
     image: 'elxate.png',
     dateAdded: '21/07/2025',
   },
   {
-    name: 'palermo',
+    name: 'Palermo',
     link: 'https://www.instagram.com/cafepalermo_/',
     image: 'palermo.png',
     dateAdded: '21/07/2025',
   },
   {
-    name: 'stereo',
+    name: 'Stereo',
     link: 'https://www.instagram.com/stereo_oo_/',
     image: 'stereo.png',
     dateAdded: '21/07/2025',
   },
   {
-    name: 'ypsilon',
+    name: 'Ypsilon',
     link: 'https://www.instagram.com/ypsilon___/',
     image: 'ypsilon.png',
     dateAdded: '21/07/2025',
   },
   {
-    name: 'tzela delta',
+    name: 'Tzela Delta',
     link: 'https://www.instagram.com/tzeladeltaskg_/',
     image: 'tzeladelta.png',
     dateAdded: '21/07/2025',
   },
   {
-    name: 'ydro',
+    name: 'Ydro',
     link: 'https://www.instagram.com/ydro___/',
     image: 'ydro.png',
     dateAdded: '21/07/2025',
   },
+  // {
+  //   name: 'Speakeasy',
+  //   link: 'https://www.instagram.com/speakeasy_floor/',
+  //   image: 'speakeasy.png',
+  //   dateAdded: '21/07/2025',
+  // },
   {
-    name: 'speakeasy',
-    link: 'https://www.instagram.com/speakeasy_floor/',
-    image: 'speakeasy.png',
-    dateAdded: '21/07/2025',
-  },
-  {
-    name: 'highonsugar',
+    name: 'Highonsugar',
     link: 'https://www.instagram.com/highonsugar______/',
     image: 'highonsugar.png',
     dateAdded: '21/07/2025',
   },
   {
-    name: 'host',
+    name: 'Host',
     link: 'https://www.instagram.com/the_host_clubskg/',
     image: 'host.png',
     dateAdded: '21/07/2025',
@@ -371,25 +362,26 @@ export const followingArray: Item[] = [
 ]
 export const therinaArray: Item[] = [
   {
-    name: 'cine apollon',
+    name: 'Apollon',
     link: 'https://www.instagram.com/cine_apollon/',
     image: 'cine-apollon.png',
     dateAdded: '20/07/2025',
   },
   {
-    name: 'cine alex',
+    name: 'Alex',
     link: 'https://www.instagram.com/cinema_alex/',
     image: 'cine-alex.png',
     dateAdded: '20/07/2025',
   },
 
   {
-    name: 'cine natali',
+    name: 'Natali',
     link: 'https://www.instagram.com/natalicinema',
     image: 'cine-natali.png',
     dateAdded: '20/07/2025',
   },
 ]
+
 export const hobbiesArray: Item[] = [
   {
     name: 'ορειβασια - ΟΑΛΘ - σχολη βουνου;',
@@ -445,5 +437,14 @@ export const hobbiesArray: Item[] = [
     link: '',
     image: '',
     dateAdded: '22/07/2025',
+  },
+]
+
+export const artistsArray: Item[] = [
+  {
+    name: 'Pedro Maia',
+    link: 'https://www.instagram.com/maiapedro/',
+    image: 'maia.png',
+    dateAdded: '17/07/2025',
   },
 ]

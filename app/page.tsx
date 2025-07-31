@@ -24,23 +24,21 @@ export default function Home() {
       className={` ${montserrat.variable} min-h-screen flex flex-col text-gray-200`}
       style={{
         background:
-          'linear-gradient(to bottom, #150731ff, #63104eff, #011c34ff)',
+          'linear-gradient(to bottom, #150731ff, #63104eff, #050831ff, #011c34ff)',
       }}
     >
       <div className='w-full bg-black p-8'>
         {/* <img src='colorimage.png' className='w-full'/> */}
         <h1
-          className='text-3xl md:text-7xl font-extralight text-center my-6
-            text-transparent bg-clip-text 
-            bg-[url("/colorimage.png")]
-            bg-cover 
-            bg-[0%_50%]
+          className=' my-6
+            text-3xl md:text-7xl font-extralight text-center text-transparent 
+            bg-clip-text bg-[url("/colorimage.png")] bg-cover bg-[0%_50%]
             '
         >
           s • o • u • r • c • e • r • y
         </h1>
       </div>
-      <main className='flex flex-grow flex-col  font-sans p-8'>
+      <main className='flex flex-grow flex-col font-sans p-8'>
         {sectionsArray.map((section, i) => {
           return (
             <div key={i}>
@@ -51,17 +49,17 @@ export default function Home() {
             </div>
           )
         })}
+        {/* <div className='w-full bg-black p-8'> */}
+        <div className='flex flex-col items-center p-4 text-gray-500 '>
+          * Things that are not included (but hey, change my mind!) are{' '}
+          <b>arte, nts</b>
+        </div>
       </main>
-      {/* <div className='w-full bg-black p-8'> */}
-      <div className='flex flex-col items-center p-4 text-gray-500 '>
-        * Things that are not included (but hey, change my mind!) are{' '}
-        <b>arte, nts</b>
-      </div>
       <footer
-        className='text-center text-sm text-gray-200 py-6 bg-black p-8
-            bg-[url("/colorimage.png")]
-            bg-cover 
-            bg-[0%_67%]
+        className='
+          text-center text-sm text-gray-200
+          py-6 bg-black p-8
+          bg-[url("/colorimage.png")] bg-cover bg-[0%_67%]
       '
       >
         <div className='flex justify-center'>
@@ -105,11 +103,11 @@ const Section = ({ section }: SectionProps) => {
     <section className='mb-10 flex flex-col items-center' key={section.name}>
       <h2
         style={{ textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}
-        className='text-3xl md:text-5xl mt-8 mb-8 text-amber-400 text-center tracking-wide brightness-70'
+        className='text-3xl md:text-5xl mt-8 mb-8 text-amber-400 text-center tracking-wide brightness-75 font-bold'
       >
         {section.name}
       </h2>
-      <div className='grid grid-cols-1 gap-4 grid-cols-2 md:grid-cols-3 '>
+      <div className='grid grid-cols-1 gap-1 grid-cols-2 md:grid-cols-3 '>
         {section.array.map((item: Item, i: number) => (
           <Tile item={item} key={i} />
         ))}
@@ -123,21 +121,22 @@ const Tile = ({ item }: TileProps) => {
     <a href={item.link} target='_blank' rel='noopener noreferrer'>
       <div
         className='
-          flex flex-col p-4 
+          flex flex-col 
           items-center
           transition-transform duration-300 
-          hover:scale-115 brightness-80 hover:brightness-100 
+          hover:scale-110 
+          brightness-70 hover:brightness-90 
           center'
       >
         <img
           src={(item.image.length && item.image) || 'art_default.png'}
-          className='md:h-45 md:w-45 h-25 w-25 object-cover rounded-full bg-[#150b0b]/30 brightness-80 shadow-lg p-1 md:m-2 md:p-2'
+          className='md:h-60 md:w-60 h-25 w-25 object-cover bg-[#150b0b]/30 brightness-80 shadow-lg p-1 md:m-1 md:p-1'
         />
-        <h1 className='text-xl text-gray-200 text-center my-3 max-w-[200px] '>
+        <h1 className='text-xl text-gray-200 text-center mb-4 max-w-[200px] '>
           {item.name}
         </h1>
         {item.comment && (
-          <p className='text-gray-200 text-center my-3 max-w-[200px] '>
+          <p className='text-gray-200 text-center max-w-[200px] '>
             {item.comment}
           </p>
         )}
@@ -187,12 +186,12 @@ const hobbies = {
 
 const sectionsArray = [
   youtubeChannels,
-  music,
   bars,
   djs,
-  ekpompes,
+  music,
+  // ekpompes,
   // artists,
-  following,
+  // following,
   therina,
-  hobbies,
+  // hobbies,
 ]
