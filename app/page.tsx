@@ -9,6 +9,7 @@ import {
   djsArray,
   ekpompesArray,
   followingArray,
+  hobbiesArray,
 } from './data/data'
 import { Montserrat } from 'next/font/google'
 const montserrat = Montserrat({
@@ -135,53 +136,63 @@ const Tile = ({ item }: TileProps) => {
         <h1 className='text-xl text-gray-200 text-center my-3 max-w-[200px] '>
           {item.name}
         </h1>
+        {item.comment && (
+          <p className='text-gray-200 text-center my-3 max-w-[200px] '>
+            {item.comment}
+          </p>
+        )}
       </div>
     </a>
   )
 }
 
-const youtubeChannelsSection = {
+const youtubeChannels = {
   name: 'Youtube Channels',
   array: youtubeChannelArray,
 }
 
-const musicSection = {
+const music = {
   name: 'Music',
   array: musicArray,
 }
 
-// const artistsSection = {
+// const artists = {
 //   name: 'Artists',
 //   array: artistsArray,
 // }
-const barsSection = {
+const bars = {
   name: 'Where?',
   array: barsArray,
 }
-const djsSection = {
+const djs = {
   name: 'Who?',
   array: djsArray,
 }
-const ekpompesSection = {
+const ekpompes = {
   name: 'Shows',
   array: ekpompesArray,
 }
-const followingSection = {
+const following = {
   name: 'Δείξε μου το φίλο σου',
   array: followingArray,
 }
-const therinaSection = {
+const therina = {
   name: 'θερινά σινεμά',
   array: therinaArray,
 }
+const hobbies = {
+  name: 'hobbiz',
+  array: hobbiesArray,
+}
 
 const sectionsArray = [
-  musicSection,
-  barsSection,
-  djsSection,
-  ekpompesSection,
-  // artistsSection,
-  followingSection,
-  youtubeChannelsSection,
-  therinaSection,
+  youtubeChannels,
+  music,
+  bars,
+  djs,
+  ekpompes,
+  // artists,
+  following,
+  therina,
+  hobbies,
 ]

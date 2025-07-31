@@ -3,6 +3,7 @@ export type Item = {
   link: string
   image: string
   dateAdded: string
+  comment?: string
 }
 export type TileProps = {
   item: Item
@@ -145,6 +146,7 @@ export const barsArray: Item[] = [
     link: 'https://www.instagram.com/prosexws',
     image: '',
     dateAdded: '19/07/2025',
+    comment: 'akrivoutsiko!',
   },
   {
     name: 'pierrot',
@@ -266,6 +268,18 @@ export const barsArray: Item[] = [
     image: 'host.png',
     dateAdded: '21/07/2025',
   },
+  {
+    name: 'Augoustos',
+    link: 'https://www.instagram.com/avgoustosbar/',
+    image: 'augoustos.png',
+    dateAdded: '31/07/2025',
+  },
+  {
+    name: 'The Path',
+    link: 'https://www.instagram.com/the_path_skg/',
+    image: 'thepath.png',
+    dateAdded: '31/07/2025',
+  },
 ]
 export const djsArray: Item[] = [
   {
@@ -374,5 +388,62 @@ export const therinaArray: Item[] = [
     link: 'https://www.instagram.com/natalicinema',
     image: 'cine-natali.png',
     dateAdded: '20/07/2025',
+  },
+]
+export const hobbiesArray: Item[] = [
+  {
+    name: 'ορειβασια - ΟΑΛΘ - σχολη βουνου;',
+    link: 'https://web.facebook.com/oalth/events',
+    image: 'oalth.png',
+    dateAdded: '22/07/2025',
+  },
+  {
+    name: 'ΦΗΤ - πεζοποριαα',
+    link: 'https://web.facebook.com/groups/622073555529798/events',
+    image: 'fit.png',
+    dateAdded: '22/07/2025',
+  },
+
+  {
+    name: 'NorthStars',
+    link: 'https://web.facebook.com/groups/5712697648860055/events',
+    image: 'NorthStars.png',
+    dateAdded: '22/07/2025',
+  },
+  {
+    name: 'adventure experience',
+    link: 'https://web.facebook.com/adventureexperiencegreece/events',
+    image: 'adventureexperience.png',
+    dateAdded: '22/07/2025',
+  },
+  {
+    name: 'Kings of Mountains',
+    link: 'https://web.facebook.com/kingsofmountains.gr/events',
+    image: 'kingsofmountains.png',
+    dateAdded: '22/07/2025',
+  },
+  {
+    name: 'pezoporontas',
+    link: 'https://web.facebook.com/pezoporontas',
+    image: 'pezoporontas.png',
+    dateAdded: '22/07/2025',
+  },
+  {
+    name: 'στερεοσις φωτογραφια',
+    link: 'https://www.stereosis.com/academy-back-to-basics/',
+    image: 'stereosis.png',
+    dateAdded: '22/07/2025',
+  },
+  {
+    name: 'χορος - συγχρονο / σουινγκ / μπαλετο',
+    link: '',
+    image: '',
+    dateAdded: '22/07/2025',
+  },
+  {
+    name: 'φωτογραφια στερεοσις / φλας',
+    link: '',
+    image: '',
+    dateAdded: '22/07/2025',
   },
 ]
