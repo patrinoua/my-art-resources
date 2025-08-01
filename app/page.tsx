@@ -40,7 +40,7 @@ export default function Home() {
             <div key={i}>
               <Section section={section} />
               {i !== sectionsArray.length - 1 && (
-                <div className="my-8 h-1 w-full bg-yellow-900 opacity-80 shadow-lg" />
+                <div className="my-20 h-4 bg-yellow-900 opacity-80 shadow-lg" />
               )}
             </div>
           )
