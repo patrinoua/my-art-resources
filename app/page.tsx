@@ -37,10 +37,13 @@ export default function Home() {
       <main className="flex flex-grow flex-col p-8 font-sans">
         {sectionsArray.map((section, i) => {
           return (
-            <div key={i}>
+            <div
+              key={i}
+              className="center flex flex-col items-center justify-center"
+            >
               <Section section={section} />
               {i !== sectionsArray.length - 1 && (
-                <div className="mx-10 my-10 h-1 bg-yellow-700 opacity-80 shadow-lg sm:mx-20 sm:my-15 md:mx-30" />
+                <div className="h-1 w-[300px] max-w-[850px] bg-yellow-700 opacity-80 shadow-lg md:w-full" />
               )}
             </div>
           )
@@ -95,7 +98,7 @@ const Section = ({ section }: SectionProps) => {
         style={{
           textShadow: '0 2px 4px rgba(0,0,0,0.3)',
         }}
-        className="mt-8 mb-12 bg-gradient-to-b from-amber-300 to-amber-500 bg-clip-text text-center text-3xl font-light text-transparent brightness-92 sm:mt-4 md:text-5xl"
+        className="m-14 mt-14 bg-gradient-to-b from-amber-300 to-amber-500 bg-clip-text text-center text-3xl font-light text-transparent brightness-92 md:mt-25 md:text-5xl"
       >
         {section.name}
       </h2>
@@ -114,10 +117,10 @@ const Tile = ({ item }: TileProps) => {
       <div className="center relative m-1 flex flex-col items-center brightness-80 transition-transform duration-300 hover:scale-104 hover:brightness-92">
         <img
           src={(item.image.length && item.image) || 'art_default.png'}
-          className="h-25 w-25 bg-[#150b0b]/30 object-cover p-1 shadow-lg brightness-90 md:m-1 md:h-60 md:w-60 md:p-1"
+          className="h-40 w-40 bg-[#150b0b]/30 object-cover p-1 shadow-lg brightness-90 md:m-1 md:h-60 md:w-60 md:p-1"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/50 p-2 text-center transition-transform duration-300 hover:scale-105">
-          <h1 className="b-4 max-w-[200px] text-center text-sm font-bold tracking-wide text-gray-100 md:text-2xl">
+          <h1 className="b-4 max-w-[200px] text-center text-xl font-bold tracking-wide text-gray-100 md:text-2xl">
             {item.name}
           </h1>
           {item.comment && (
