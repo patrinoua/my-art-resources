@@ -86,13 +86,25 @@ export const musicArray: Item[] = [
     image: 'goo.png',
     dateAdded: '17/07/2025',
   },
-
+  {
+    name: 'lostinthe soundcloud',
+    link: 'https://www.google.com/search?q=lostinthe+mixcloud&oq=lostinthe+mixcloud&gs_lcrp=EgZjaHJvbWUyCwgAEEUYChg5GKAB0gEIMzk4OGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8',
+    image: 'lostinthe.png',
+    dateAdded: '31/07/2025',
+  },
   {
     name: 'Kirchoff mixcloud',
     link: 'https://www.mixcloud.com/37_5967%CE%9D_Kirchoff26_1123%CE%95/?fbclid=IwY2xjawLp6oVleHRuA2FlbQIxMABicmlkETBNUFdrQkV4VWFzeFR3MjFkAR68HL75UYJXYRTAgh16HXXR9RJe9D8SdFbFpcpc7EAmYneGSPPca9VL3qOdpQ_aem_OqTZ0SCZE77xaTkFClmqZQ',
     image: 'kirchoff1.png',
     dateAdded: '19/07/2025',
   },
+  {
+    name: 'lostinthe mixcloud',
+    link: 'https://soundcloud.com/lostinthe',
+    image: 'lostinthe.png',
+    dateAdded: '31/07/2025',
+  },
+
   {
     name: 'Holy Tongue',
     link: 'https://amidahrecords.bandcamp.com/',
@@ -110,6 +122,60 @@ export const musicArray: Item[] = [
     link: 'https://www.mixcloud.com/DuruDuru/reposts/',
     image: 'duru.png',
     dateAdded: '19/07/2025',
+  },
+  {
+    name: 'Electrodon Mixcloud',
+    link: 'https://www.mixcloud.com/electrodon/',
+    image: 'electrodon.png',
+    dateAdded: '31/07/2025',
+  },
+  {
+    name: 'mechatronica Mixcloud',
+    link: 'https://www.mixcloud.com/electrodon/',
+    image: 'mechatronica.png',
+    dateAdded: '31/07/2025',
+  },
+  {
+    name: 'asoray soundcloud',
+    link: 'https://www.soundcloud.com/asoray/',
+    image: 'asoray.png',
+    dateAdded: '31/07/2025',
+  },
+  {
+    name: 'CDV dj sets mixcloud',
+    link: 'https://www.google.com/search?q=club+de+visionaire+mixcloud&oq=club+de+visionaire+mixcloud&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIKCAEQABiABBiiBDIHCAIQABjvBTIHCAMQABjvBTIHCAQQABjvBTIHCAUQABjvBdIBCDUyMDRqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8',
+    image: 'cdv.png',
+    dateAdded: '31/07/2025',
+  },
+  {
+    name: 'Tresor soundcloud',
+    link: 'https://soundcloud.com/tresorberlin',
+    image: 'tresor.png',
+    dateAdded: '31/07/2025',
+  },
+  {
+    name: 'CDV soundcloud',
+    link: 'https://soundcloud.com/user-635775409',
+    image: 'cdv.png',
+    dateAdded: '31/07/2025',
+  },
+  {
+    name: 'Tresor sets soundcloud',
+    link: 'https://soundcloud.com/search?q=tresor',
+    image: 'tresor.png',
+    dateAdded: '31/07/2025',
+  },
+  {
+    name: 'fusion soundcloud',
+    link: 'https://soundcloud.com/fusionfestivallaerz',
+    image: 'fusion.png',
+    dateAdded: '31/07/2025',
+  },
+  {
+    name: 'Afrika burn soundcloud',
+    link: 'https://soundcloud.com/afrikaburn',
+    image: 'afrikaburn.png',
+    dateAdded: '31/07/2025',
   },
 ]
 
@@ -287,6 +353,12 @@ export const djsArray: Item[] = [
     dateAdded: '19/07/2025',
   },
 
+  {
+    name: 'lostinthe',
+    link: 'https://www.instagram.com/lostinthe.77/',
+    image: 'goo.png',
+    dateAdded: '19/07/2025',
+  },
   {
     name: 'Goo',
     link: 'https://www.instagram.com/vwettex/',
