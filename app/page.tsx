@@ -28,13 +28,13 @@ export default function Home() {
           'linear-gradient(to bottom, #150731ff, #63104eff, #050831ff, #011c34ff)',
       }}
     >
-      <div className="mb-8 w-full bg-black p-8">
+      <div className="w-full bg-black p-4 md:mb-8 md:p-8">
         {/* <img src='colorimage.png' className='w-full'/> */}
         <h1 className='my-6 bg-[url("/colorimage.png")] bg-cover bg-clip-text bg-[0%_50%] text-center text-3xl font-extralight text-transparent md:text-7xl'>
           s • o • u • r • c • e • r • y
         </h1>
       </div>
-      <main className="flex flex-grow flex-col p-8 font-sans">
+      <main className="flex flex-grow flex-col font-sans md:p-8">
         {sectionsArray.map((section, i) => {
           return (
             <div
