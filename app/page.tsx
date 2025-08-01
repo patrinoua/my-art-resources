@@ -95,11 +95,11 @@ const Section = ({ section }: SectionProps) => {
         style={{
           textShadow: '0 2px 4px rgba(0,0,0,0.3)',
         }}
-        className="mt-8 mb-8 text-center text-3xl font-medium tracking-wide text-amber-400 brightness-75 md:text-5xl"
+        className="mt-8 mb-8 bg-gradient-to-b from-amber-300 to-amber-500 bg-clip-text text-center text-3xl font-medium tracking-wide text-transparent brightness-85 md:text-5xl"
       >
         {section.name}
       </h2>
-      <div className="grid grid-cols-1 grid-cols-2 gap-1 md:grid-cols-3">
+      <div className="grid grid-cols-2 gap-1 md:grid-cols-3">
         {section.array.map((item: Item, i: number) => (
           <Tile item={item} key={i} />
         ))}
@@ -116,7 +116,7 @@ const Tile = ({ item }: TileProps) => {
           src={(item.image.length && item.image) || 'art_default.png'}
           className="h-25 w-25 bg-[#150b0b]/30 object-cover p-1 shadow-lg brightness-80 md:m-1 md:h-60 md:w-60 md:p-1"
         />
-        <h1 className="mb-4 max-w-[200px] text-center text-xl text-gray-200">
+        <h1 className="mb-4 max-w-[200px] text-center text-xl font-bold tracking-wide text-gray-200">
           {item.name}
         </h1>
         {item.comment && (
