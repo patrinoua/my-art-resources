@@ -28,7 +28,7 @@ export default function Home() {
           'linear-gradient(to bottom, #150731ff, #63104eff, #050831ff, #011c34ff)',
       }}
     >
-      <div className="w-full bg-black p-8">
+      <div className="mb-8 w-full bg-black p-8">
         {/* <img src='colorimage.png' className='w-full'/> */}
         <h1 className='my-6 bg-[url("/colorimage.png")] bg-cover bg-clip-text bg-[0%_50%] text-center text-3xl font-extralight text-transparent md:text-7xl'>
           s • o • u • r • c • e • r • y
@@ -40,7 +40,7 @@ export default function Home() {
             <div key={i}>
               <Section section={section} />
               {i !== sectionsArray.length - 1 && (
-                <div className="my-20 h-4 bg-yellow-900 opacity-80 shadow-lg" />
+                <div className="mx-10 my-10 h-1 bg-yellow-700 opacity-80 shadow-lg sm:mx-20 sm:my-15 md:mx-30" />
               )}
             </div>
           )
@@ -95,7 +95,7 @@ const Section = ({ section }: SectionProps) => {
         style={{
           textShadow: '0 2px 4px rgba(0,0,0,0.3)',
         }}
-        className="mt-8 mb-8 bg-gradient-to-b from-amber-300 to-amber-500 bg-clip-text text-center text-3xl font-medium tracking-wide text-transparent brightness-85 md:text-5xl"
+        className="mt-8 mb-12 bg-gradient-to-b from-amber-300 to-amber-500 bg-clip-text text-center text-3xl font-light text-transparent brightness-92 sm:mt-4 md:text-5xl"
       >
         {section.name}
       </h2>
@@ -111,19 +111,21 @@ const Section = ({ section }: SectionProps) => {
 const Tile = ({ item }: TileProps) => {
   return (
     <a href={item.link} target="_blank" rel="noopener noreferrer">
-      <div className="center flex flex-col items-center brightness-70 transition-transform duration-300 hover:scale-110 hover:brightness-90">
+      <div className="center relative m-1 flex flex-col items-center brightness-80 transition-transform duration-300 hover:scale-104 hover:brightness-92">
         <img
           src={(item.image.length && item.image) || 'art_default.png'}
-          className="h-25 w-25 bg-[#150b0b]/30 object-cover p-1 shadow-lg brightness-80 md:m-1 md:h-60 md:w-60 md:p-1"
+          className="h-25 w-25 bg-[#150b0b]/30 object-cover p-1 shadow-lg brightness-90 md:m-1 md:h-60 md:w-60 md:p-1"
         />
-        <h1 className="mb-4 max-w-[200px] text-center text-xl font-bold tracking-wide text-gray-200">
-          {item.name}
-        </h1>
-        {item.comment && (
-          <p className="max-w-[200px] text-center text-gray-200">
-            {item.comment}
-          </p>
-        )}
+        <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/50 p-2 text-center transition-transform duration-300 hover:scale-105">
+          <h1 className="b-4 max-w-[200px] text-center text-sm font-bold tracking-wide text-gray-100 md:text-2xl">
+            {item.name}
+          </h1>
+          {item.comment && (
+            <p className="max-w-[200px] text-center text-gray-200">
+              {item.comment}
+            </p>
+          )}
+        </div>
       </div>
     </a>
   )
