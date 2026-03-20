@@ -237,7 +237,7 @@ export const barsArray: Item[] = [
   },
   {
     name: 'Giapi',
-    link: 'https://www.instagram.com/giapi_bar /',
+    link: 'https://www.instagram.com/giapi_bar/',
     image: 'giapi.png',
     dateAdded: '21/07/2025',
   },
@@ -482,7 +482,7 @@ export const hobbiesArray: Item[] = [
   },
   {
     name: 'Kings of Mountains',
-    link: 'https://web.facebook.com/kingsofmountains.gr/events',
+    link: 'https://www.kingsofmountains.com/events/',
     image: 'kingsofmountains.png',
     dateAdded: '22/07/2025',
   },
@@ -518,5 +518,25 @@ export const artistsArray: Item[] = [
     link: 'https://www.instagram.com/maiapedro/',
     image: 'maia.png',
     dateAdded: '17/07/2025',
+  },
+]
+export const workoutArray: Item[] = [
+  {
+    name: 'Caroline Girvan',
+    link: 'https://www.youtube.com/c/CarolineGirvan',
+    image: 'caroline.png',
+    dateAdded: '10/08/2025',
+  },
+  {
+    name: '5 min warm up - Caroline',
+    link: 'https://www.youtube.com/watch?v=c0VxUFHdYzs',
+    image: 'caroline.png',
+    dateAdded: '10/08/2025',
+  },
+  {
+    name: 'Jeremy Ethier - abs',
+    link: 'https://youtu.be/Y0nXmTZ1Ibs?t=222',
+    image: 'abs.png',
+    dateAdded: '10/08/2025',
   },
 ]

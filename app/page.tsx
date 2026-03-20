@@ -10,6 +10,7 @@ import {
   ekpompesArray,
   followingArray,
   hobbiesArray,
+  workoutArray,
 } from './data/data'
 import { Montserrat } from 'next/font/google'
 
@@ -172,6 +173,10 @@ const hobbies = {
   name: 'hobbiz',
   array: hobbiesArray,
 }
+const gym = {
+  name: 'gym',
+  array: workoutArray,
+}
 
 const sectionsArray = [
   youtubeChannels,
@@ -182,5 +187,6 @@ const sectionsArray = [
   // artists,
   // following,
   therina,
-  // hobbies,
+  gym,
+  hobbies,
 ]
