@@ -5,8 +5,6 @@ export default function Model3d() {
         title="Custom Iphone 17 3D Model"
         frameBorder="0"
         allowFullScreen
-        mozallowfullscreen="true"
-        webkitallowfullscreen="true"
         className="h-full w-full border-0"
         allow="autoplay; fullscreen; xr-spatial-tracking"
         src="https://sketchfab.com/models/a74e68fb04d14db19a08abddfff8ac85/embed?autospin=1&ui_theme=dark"
