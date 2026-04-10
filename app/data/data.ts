@@ -61,6 +61,7 @@ export const musicArray: Item[] = [
     link: 'https://www.paranoiseradio.com/',
     image: 'paranoise.png',
     dateAdded: '17/07/2025',
+    comment: 'jahnabet',
   },
   {
     name: 'Paranoise mixcloud',
@@ -85,6 +86,12 @@ export const musicArray: Item[] = [
     link: 'https://www.mixcloud.com/george-goo/',
     image: 'goo.png',
     dateAdded: '17/07/2025',
+  },
+  {
+    name: 'Jahnabet',
+    link: 'https://www.mixcloud.com/Jahnabet/',
+    image: 'Jahnabet.png',
+    dateAdded: '09/04/2026',
   },
   {
     name: 'lostinthe soundcloud',
@@ -197,6 +204,13 @@ export const barsArray: Item[] = [
     link: 'https://www.instagram.com/mikroumikous.bar',
     image: 'mikous.png',
     dateAdded: '19/07/2025',
+  },
+  {
+    name: 'kotetsi',
+    link: 'https://www.instagram.com/the_kotetsi',
+    image: 'kotetsi.png',
+    dateAdded: '10/04/2026',
+    comment: 'experimental ✨',
   },
   {
     name: 'Προσεχώς',
@@ -344,6 +358,12 @@ export const djsArray: Item[] = [
     link: 'https://www.instagram.com/pan__far/',
     image: 'panfar.png',
     dateAdded: '19/07/2025',
+  },
+  {
+    name: 'Jahnabet',
+    link: 'https://web.facebook.com/Jahnabet',
+    image: 'Jahnabet.png',
+    dateAdded: '09/04/2026',
   },
 
   {
