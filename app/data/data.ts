@@ -8,7 +8,44 @@ export type Item = {
 export type TileProps = {
   item: Item
 }
-
+export const museumsArray: Item[] = [
+  {
+    name: 'Contemporary Art Museum - ΔΕΘ',
+    link: 'https://web.facebook.com/MOMUSContemporary/',
+    image: 'contemporary.png',
+    dateAdded: '1/09/2026',
+  },
+  {
+    name: 'Photography Museum',
+    link: 'https://web.facebook.com/MOMUSPhotography/',
+    image: 'photography.png',
+    dateAdded: '1/09/2026',
+  },
+  {
+    name: 'Museum of Modern Art, συλλογή Κωστακη - Μονή Λαζαριστών',
+    link: 'https://web.facebook.com/MOMUSModern',
+    image: 'monilazariston.png',
+    dateAdded: '1/09/2026',
+  },
+  {
+    name: 'Archaeological Museum of Thessaloniki',
+    link: 'https://web.facebook.com/archaeologicalmuseumofthessaloniki?_rdc=1&_rdr#',
+    image: 'archae.png',
+    dateAdded: '1/09/2026',
+  },
+  {
+    name: 'Museum of Byzantine Civilization',
+    link: 'https://web.facebook.com/MOMUSModern',
+    image: 'vyzan.png',
+    dateAdded: '1/09/2026',
+  },
+  {
+    name: '',
+    link: '',
+    image: '',
+    dateAdded: '',
+  },
+]
 export const youtubeChannelArray: Item[] = [
   {
     //maybe add city
@@ -28,6 +65,12 @@ export const youtubeChannelArray: Item[] = [
     link: 'https://www.youtube.com/@Tate',
     image: 'tate.png',
     dateAdded: '17/07/2025',
+  },
+  {
+    name: '',
+    link: '',
+    image: '',
+    dateAdded: '',
   },
 ]
 
@@ -58,10 +101,10 @@ export const musicArray: Item[] = [
   },
   {
     name: 'Paranoise radio',
-    link: 'https://www.paranoiseradio.com/',
+    link: 'https://www.paranoiseradio.com/residents',
     image: 'paranoise.png',
     dateAdded: '17/07/2025',
-    comment: 'jahnabet',
+    comment: 'residents, jahnabet',
   },
   {
     name: 'Paranoise mixcloud',
@@ -125,12 +168,6 @@ export const musicArray: Item[] = [
     dateAdded: '19/07/2025',
   },
   {
-    name: 'Duru mixcloud',
-    link: 'https://www.mixcloud.com/DuruDuru/reposts/',
-    image: 'duru.png',
-    dateAdded: '19/07/2025',
-  },
-  {
     name: 'Electrodon Mixcloud',
     link: 'https://www.mixcloud.com/electrodon/',
     image: 'electrodon.png',
@@ -147,6 +184,12 @@ export const musicArray: Item[] = [
     link: 'https://www.soundcloud.com/asoray/',
     image: 'asoray.png',
     dateAdded: '31/07/2025',
+  },
+  {
+    name: 'buru mixcloud',
+    link: 'https://www.mixcloud.com/DuruDuru/reposts/',
+    image: 'duru.png',
+    dateAdded: '19/07/2025',
   },
   {
     name: 'CDV dj sets mixcloud',
@@ -183,6 +226,12 @@ export const musicArray: Item[] = [
     link: 'https://soundcloud.com/afrikaburn',
     image: 'afrikaburn.png',
     dateAdded: '31/07/2025',
+  },
+  {
+    name: '',
+    link: '',
+    image: '',
+    dateAdded: '',
   },
 ]
 
@@ -225,12 +274,12 @@ export const barsArray: Item[] = [
     image: 'pierrot.png',
     dateAdded: '19/07/2025',
   },
-  {
-    name: 'Oratos',
-    link: 'https://www.instagram.com/_oratos__/',
-    image: 'oratos.png',
-    dateAdded: '19/07/2025',
-  },
+  // {
+  //   name: 'Oratos',
+  //   link: 'https://www.instagram.com/_oratos__/',
+  //   image: 'oratos.png',
+  //   dateAdded: '19/07/2025',
+  // },
   {
     name: 'Yfanet',
     link: 'https://www.instagram.com/fabrika.yfanet/',
@@ -351,8 +400,20 @@ export const barsArray: Item[] = [
     image: 'thepath.png',
     dateAdded: '31/07/2025',
   },
+  {
+    name: '',
+    link: '',
+    image: '',
+    dateAdded: '',
+  },
 ]
 export const djsArray: Item[] = [
+  {
+    name: '',
+    link: '',
+    image: '',
+    dateAdded: '',
+  },
   {
     name: 'Παν Φαρ',
     link: 'https://www.instagram.com/pan__far/',
@@ -367,7 +428,7 @@ export const djsArray: Item[] = [
   },
 
   {
-    name: 'Duru Duru',
+    name: 'buru',
     link: 'https://www.instagram.com/eva.duruduru/',
     image: 'duru.png',
     dateAdded: '19/07/2025',
@@ -446,12 +507,13 @@ export const followingArray: Item[] = [
     dateAdded: '17/07/2025',
   },
   {
-    name: 'duru soundcloud',
+    name: 'buru soundcloud',
     link: 'https://soundcloud.com/duru-duru-1/following',
     image: 'duru.png',
     dateAdded: '17/07/2025',
   },
 ]
+
 export const therinaArray: Item[] = [
   {
     name: 'Apollon',
@@ -472,11 +534,35 @@ export const therinaArray: Item[] = [
     image: 'cine-natali.png',
     dateAdded: '20/07/2025',
   },
+  {
+    name: '',
+    link: '',
+    image: '',
+    dateAdded: '',
+  },
+  {
+    name: '',
+    link: '',
+    image: '',
+    dateAdded: '',
+  },
+  {
+    name: '',
+    link: '',
+    image: '',
+    dateAdded: '',
+  },
 ]
 
 export const hobbiesArray: Item[] = [
   {
-    name: 'ορειβασια - ΟΑΛΘ - σχολη βουνου;',
+    name: 'Swing Academy',
+    link: 'https://www.instagram.com/swingacademy_thessaloniki/',
+    image: 'swingacademy.png',
+    dateAdded: '22/07/2025',
+  },
+  {
+    name: 'ΟΑΛΘ',
     link: 'https://web.facebook.com/oalth/events',
     image: 'oalth.png',
     dateAdded: '22/07/2025',
@@ -518,12 +604,7 @@ export const hobbiesArray: Item[] = [
     image: 'stereosis.png',
     dateAdded: '22/07/2025',
   },
-  {
-    name: 'χορος - συγχρονο / σουινγκ / μπαλετο',
-    link: '',
-    image: '',
-    dateAdded: '22/07/2025',
-  },
+
   {
     name: 'φωτογραφια στερεοσις / φλας',
     link: '',
@@ -540,6 +621,7 @@ export const artistsArray: Item[] = [
     dateAdded: '17/07/2025',
   },
 ]
+
 export const workoutArray: Item[] = [
   {
     name: 'Caroline Girvan',

@@ -1,6 +1,7 @@
 import {
   TileProps,
   Item,
+  museumsArray,
   youtubeChannelArray,
   musicArray,
   // artistsArray,
@@ -25,17 +26,18 @@ export default function Home() {
     <div
       className={`${montserrat.variable} flex min-h-screen flex-col text-gray-200`}
       style={{
+        // background: 'linear-gradient(to bottom, #ffffff, #63104eff)',
         background:
           'linear-gradient(to bottom, #150731ff, #63104eff, #050831ff, #011c34ff)',
       }}
     >
-      <div className="w-full bg-black p-4 md:mb-8 md:p-8">
+      <div className="mx:mb-8 w-full bg-black p-4 md:p-8">
         {/* <img src='colorimage.png' className='w-full'/> */}
         <h1 className='my-6 bg-[url("/colorimage.png")] bg-cover bg-clip-text bg-[0%_50%] text-center text-3xl font-extralight text-transparent md:text-7xl'>
           s • o • u • r • c • e • r • y
         </h1>
       </div>
-      <main className="flex flex-grow flex-col font-sans md:p-8">
+      <main className="mx:p-8 flex flex-grow flex-col font-sans">
         {sectionsArray.map((section, i) => {
           return (
             <div
@@ -49,7 +51,6 @@ export default function Home() {
             </div>
           )
         })}
-        {/* <div className='w-full bg-black p-8'> */}
         <div className="flex flex-col items-center p-4 text-gray-500">
           * Things that are not included (but hey, change my mind!) are{' '}
           <b>arte, nts</b>
@@ -99,14 +100,14 @@ const Section = ({ section }: SectionProps) => {
         style={{
           textShadow: '0 2px 4px rgba(0,0,0,0.3)',
         }}
-        className="m-14 mt-14 bg-gradient-to-b from-amber-300 to-amber-500 bg-clip-text text-center text-3xl font-light text-transparent brightness-92 md:mt-25 md:text-5xl"
+        className="m-14 mt-14 bg-gradient-to-b from-amber-300 to-amber-500 bg-clip-text text-center text-3xl text-transparent brightness-92 md:mt-25 md:text-5xl"
       >
         {section.name}
       </h2>
       <div className="grid grid-cols-2 gap-1 md:grid-cols-3">
-        {section.array.map((item: Item, i: number) => (
-          <Tile item={item} key={i} />
-        ))}
+        {section.array.map(
+          (item: Item, i: number) => item.name && <Tile item={item} key={i} />,
+        )}
       </div>
     </section>
   )
@@ -170,19 +171,24 @@ const therina = {
   array: therinaArray,
 }
 const hobbies = {
-  name: 'hobbiz',
+  name: 'hobbies',
   array: hobbiesArray,
 }
 const gym = {
   name: 'gym',
   array: workoutArray,
 }
+const museums = {
+  name: 'Museums',
+  array: museumsArray,
+}
 
 const sectionsArray = [
+  music,
+  museums,
   youtubeChannels,
   bars,
   djs,
-  music,
   // ekpompes,
   // artists,
   // following,
